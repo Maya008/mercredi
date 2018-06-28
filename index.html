@@ -14,13 +14,56 @@
 
     </head>
 <body>
-    
+
  <script>
    setTimeout (() => alert ('Hey le site xxxvidsxxx et trop bien. Vien dessus stp please'), 3000) ;
+   
  </script>
     
     <div class="centre">
-            <input type="button" value="Mode psychédèlique"onclick="change('magenta')" >
+            
+<button onclick="change_color()">Mode Psychédélique</button>
+
+<script>
+function change_color() {
+    document.body.style.backgroundColor = "magenta";
+		var paragirafy = document.getElementsByTagName("p");
+		var i;
+		for (i = 0; i < paragirafy.length; i++) {
+		    paragirafy[i].style.color = "blue";
+		    paragirafy[i].style.fontFamily = 'papyrus';
+		}
+	
+		var ash1 = document.getElementsByTagName("h1");
+		var i;
+		for (i = 0; i < ash1.length; i++) {
+		    ash1[i].style.color = "green";
+		    ash1[i].style.fontFamily = 'Comic Sans';
+		}
+		var ash2 = document.getElementsByTagName("h2");
+		var i;
+		for (i = 0; i < ash2.length; i++) {
+		    ash2[i].style.color = "green";
+		    ash2[i].style.fontFamily = 'Comic Sans';
+		}
+		
+
+
+    //
+    //var tags = ['h1','h2','h3','h4','h5','h6'];
+    //var pee = document.getElementsByTagName("p")
+    //pee.style.color = 'red';
+/*
+		for( var i in tags ){
+    		var these = document.getElementsByTagName("p");
+    		these.style.color = 'red';
+}
+*/
+
+}
+
+            </script>
+            </div>
     <header>
         <h1>This is <em>still</em> a motherfucking website.
         </h1>
